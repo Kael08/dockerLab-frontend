@@ -1,16 +1,10 @@
-<<<<<<< HEAD
 import { useNavigate } from "react-router-dom"
-=======
->>>>>>> 23194706eb72767e07bb85538e7db5fe47df9326
 import "/src/styles/Main.css"
 import { useEffect,useState } from "react"
 
 export default function Main(){
     const [films,setFilms] = useState([])
-<<<<<<< HEAD
     const navigate = useNavigate()
-=======
->>>>>>> 23194706eb72767e07bb85538e7db5fe47df9326
 
     const fetchFilms = async() => {
         try {
@@ -23,7 +17,6 @@ export default function Main(){
         }
     }
 
-<<<<<<< HEAD
     const toMain = () =>{
         navigate("/")
     }
@@ -57,15 +50,12 @@ export default function Main(){
         }
     }
 
-=======
->>>>>>> 23194706eb72767e07bb85538e7db5fe47df9326
     useEffect(()=>{
         fetchFilms()
     },[])
 
     return(
         <div className="main-cont">
-<<<<<<< HEAD
             <div className="title">
                 <h1
                 onClick={()=>toMain()}
@@ -78,11 +68,6 @@ export default function Main(){
                     +
                 </button>
             </div>
-=======
-            <h1>
-                Список фильмов
-            </h1>
->>>>>>> 23194706eb72767e07bb85538e7db5fe47df9326
             <div className="films-cont">     
                 <>
                     {films.map((film)=>(
@@ -90,12 +75,9 @@ export default function Main(){
                             <p>
                                 {film.name}
                             </p>
-<<<<<<< HEAD
                             <button onClick={()=>deleteClick(film.id)}>
                                 Удалить
                             </button>
-=======
->>>>>>> 23194706eb72767e07bb85538e7db5fe47df9326
                         </div>
                     ))}
                 </>    
