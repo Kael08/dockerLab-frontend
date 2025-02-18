@@ -1,0 +1,103 @@
+.main-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-cont input {
+    color: gray;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+}
+
+.main-cont button {
+    background-color: rgb(19, 167, 56);
+    border: 1px solid rgb(0, 255, 128);
+    color: white;
+    font-size: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 3vw;
+    height: auto;
+    border:none;
+    margin: 5px;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.main-cont button:hover {
+    background-color: rgba(0, 153, 38, 0.712);
+    box-shadow: 0px 6px 8px rgb(0, 0, 0);
+  }
+
+.title {
+    display:flex;
+    flex-direction: row;
+    gap:5px;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+.title button{
+    background-color: rgb(19, 167, 56);
+    border: 1px solid rgb(0, 255, 128);
+    color: white;
+    font-size: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 3vw;
+    height: auto;
+    border:none;
+    margin: 5px;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.title button:hover {
+    background-color: rgba(0, 153, 38, 0.712);
+    box-shadow: 0px 6px 8px rgb(0, 0, 0);
+  }
+
+.films-cont {
+    display: flex;
+    border: 3px solid greenyellow;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    min-width: 40vw;
+    background-color:blanchedalmond;
+}
+
+.film {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+
+.film button {
+    background-color: rgb(167, 19, 19);
+    border: 1px solid red;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 3vw;
+    height: auto;
+    border:none;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.film button:hover {
+    background-color: rgb(153, 0, 0);
+    box-shadow: 0px 6px 8px rgb(0, 0, 0);
+  }
+
