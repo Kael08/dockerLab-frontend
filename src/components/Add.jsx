@@ -16,7 +16,7 @@ export default function Add(){
 
     const addClick = async(name)=> {
         try{
-            const response = await fetch(`http://localhost:3000/films/add`,{
+            const response = await fetch(`http://localhost/api/films/add`,{
                 method:"POST",
                 headers:{ "Content-Type": "application/json"},
                 body:JSON.stringify({name})

@@ -8,7 +8,7 @@ export default function Main(){
 
     const fetchFilms = async() => {
         try {
-            const response = await fetch("http://localhost:3000/films/")
+            const response = await fetch("http://localhost/api/films/")
             const data = await response.json()
             console.log(data)
             setFilms(data)
@@ -27,7 +27,7 @@ export default function Main(){
 
     const deleteClick = async (id) => {
         try {
-            const response = await fetch(`http://localhost:3000/films/delete/${id}`, {
+            const response = await fetch(`http://localhost/api/films/delete/${id}`, {
                 method: "DELETE",
             })
     
